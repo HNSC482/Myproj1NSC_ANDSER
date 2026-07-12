@@ -9,10 +9,9 @@
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="refresh" content="0; url=https://bench-arc-solution-mobility.trycloudflare.com">
     <title>NSC COMPUTERS</title>
-    <script type="text/javascript">
+    <script src="script.js?v=1.0.1">
     <!-- The browser thinks this is a completely brand new file and ignores the old cache -->
     <link rel="stylesheet" href="style.css?v=1.0.1">
-    <script src="script.js?v=1.0.1"></script>
         window.location.href = "https://bench-arc-solution-mobility.trycloudflare.com";
     </script>
 </head>
@@ -22,27 +21,6 @@
 <p>If you are not redirected automatically, follow this <a href="https://bench-arc-solution-mobility.trycloudflare.com">link</a>.</p>
 </center>
 
-<script>
-    // Kill and unregister any hidden service workers caching the site
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function(registrations) {
-            for (let registration of registrations) {
-                registration.unregister().then(function(boolean) {
-                    console.log('Old Service Worker successfully deleted:', boolean);
-                });
-            }
-        });
-    }
-
-    // Forcefully wipe out application Cache Storage
-    if ('caches' in window) {
-        caches.keys().then(function(names) {
-            for (let name of names) {
-                caches.delete(name);
-            }
-        });
-    }
-</script>
 
 </body>
 </html>
