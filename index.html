@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="nscnoload">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Forces browser to re-verify the file with GitHub on every single visit -->
-    <meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="-1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Forces browser to re-verify the file with GitHub on every single visit -->
+  <meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
 
+  <title>NSC COMPUTERS</title>
 
-<script>
+  <script>
     // Clear all saved data from past sessions
     localStorage.clear();
     sessionStorage.clear();
-</script>
 
+    // Replace this with your new destination link
+    // Set your target URL
+    const targetUrl = "https://moss-remix-seeks-fortune.trycloudflare.com";
 
-    <script>
-        // Replace this with your new destination link
-        // Set your target URL
+    // Append a timestamp to make the URL unique
+    const uniqueUrl = targetUrl + (targetUrl.includes('?') ? '&' : '?') + 'cb=' + new Date().getTime();
 
-alert("https://moss-remix-seeks-fortune.trycloudflare.com");
-const targetUrl = "https://moss-remix-seeks-fortune.trycloudflare.com";
-
-// Append a timestamp to make the URL unique
-const uniqueUrl = targetUrl + (targetUrl.includes('?') ? '&' : '?') + 'cb=' + new Date().getTime();
-
-// Automatically redirect
-window.location.replace(uniqueUrl);
-    </script>
-
-
-
+    // Automatically redirect
+    window.location.replace(uniqueUrl);
+  </script>
 
 </head>
 <body>
