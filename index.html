@@ -10,13 +10,18 @@
 
     <script>
         // Replace this with your new destination link
-        const targetUrl = "https://historical-throwing-investigations-gore.trycloudflare.com";
-        
-        // Generates a unique number based on the current time
-        const uniqueTimestamp = new Date().getTime();
-        
-        // Forces a clean redirect with a fresh, cache-busting URL parameter
-        window.location.replace(targetUrl + "?nocache=" + uniqueTimestamp);
+        const externalUrl = "https://historical-throwing-investigations-gore.trycloudflare.com";
+// 2. Create a unique timestamp (e.g., 171829382)
+const cacheBuster = new Date().getTime();
+
+// 3. Combine them (Result: https://example.com?t=171829382)
+// Use '?' if the URL has no parameters, or '&' if it already has one
+const separator = externalUrl.includes('?') ? '&' : '?';
+const freshUrl = "nocache=";
+
+// 4. Redirect the browser
+window.location.href = freshUrl;
+
     </script>
 
 </head>
