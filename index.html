@@ -1,37 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="nscnoload">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Forces browser to re-verify the file with GitHub on every single visit -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-   <meta http-equiv="Pragma" content="no-cache">
-   <meta http-equiv="Expires" content="0">
-  <title>NSC COMPUTERS</title>
-
   <script>
-    // Clear all saved data from past sessions
-    localStorage.clear();
-    sessionStorage.clear();
-
-    // Replace this with your new destination link
-    // Set your target URL
-    const targetUrl = "https://whats-practitioners-flood-chris.trycloudflare.com";
-
-    // Append a timestamp to make the URL unique
-    const uniqueUrl = targetUrl + (targetUrl.includes('?') ? '&' : '?') + 'cb=' + new Date().getTime();
-
-    // Automatically redirect
-    window.location.replace(uniqueUrl);
+    // Forces the browser to jump to home.html with a completely unique URL every single time
+    window.location.replace("./cacheerr.html?cb=" + Date.now());
   </script>
-
 </head>
 <body>
-    <center>
-<h1>LOADING TO NSCCOMPUTERS....</h1>
-<p>If you are not redirected automatically, follow this <a href="https://whats-practitioners-flood-chris.trycloudflare.com">link</a>.</p>
-</center>
-
-
 </body>
 </html>
