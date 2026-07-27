@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /aboutgp.html
 Disallow: /
+sitemap: /sitemap.xml
