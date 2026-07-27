@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /aboutgp.html
 Disallow: /
-sitemap: /sitemap.xml
+Sitemap: https://www.nsccomputers.jo3.org/sitemap.xml
