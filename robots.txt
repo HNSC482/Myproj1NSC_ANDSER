@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /aboutgp.html
 Allow: /nscgallery.html
-Allow: /sitemap.xml
 Disallow: /
 Sitemap: https://www.nsccomputers.jo3.org/sitemap.xml
