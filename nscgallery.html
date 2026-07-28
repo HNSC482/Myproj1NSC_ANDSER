@@ -46,6 +46,12 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* or contain */
+
+
         }
         .gallery-item {
             background: #fff;
@@ -54,12 +60,18 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.06);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* or contain */
+
+
         }
         .gallery-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.12);
         }
-        .gallery-item img {
+        .gaery-item img {
             width: 100%;
             height: 280px;
             object-fit: cover;
@@ -157,7 +169,7 @@
 
             <!-- Item 2: Owner -->
             <div class="gallery-item" onclick="openLightbox('./hphoto.jpg', 'Business Owner Profile - NSC Computers')">
-                <img src="images/owner.jpg" alt="NSC Computers Business Owner Executive Profile Photo">
+                <img src="./hphoto.jpg" alt="NSC Computers Business Owner Executive Profile Photo">
                 <div class="item-info">
                     <h3>Company Leadership</h3>
                     <p>Executive management directing local business software operations.</p>
